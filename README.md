@@ -1,6 +1,7 @@
 # sam-app
 
 This is a sample template for sam-app
+Updating the readme file - This is an update on Markdown file .
 
 ## Requirements
 
