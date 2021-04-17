@@ -65,6 +65,13 @@ namespace InfraHelperChatbot
                         throw new Exception($"Intent with name {lexEvent.CurrentIntent.Name} not supported");
                 }
             }
+            //17-04-2021 - Code added by Thilakar - Starts
+            catch (ObjectDisposedException objDisposed)
+            {
+                context.Logger.LogLine($"ChatbotStartupProgram::LambdaFunctionHandler ObjDisposed exception message : {objDisposed.Message}");
+                context.Logger.LogLine($"ChatbotStartupProgram::LambdaFunctionHandler ObjDisposed stacktrace : {objDisposed.StackTrace}");
+            }
+            //17-04-2021 - Code added by Thilakar - ends
             catch(Exception ex)
             {
                 context.Logger.LogLine($"ChatbotStartupProgram::LambdaFunctionHandler exception message : {ex.Message}");
