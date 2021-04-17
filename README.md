@@ -1,12 +1,14 @@
-# sam-app
+## Updated the Readme file with proposed Markdown language formatting
+
+# Sam-App - ChatBot using AWS and Cloud services
 
 This is a sample template for sam-app
 Updating the readme file - This is an update on Markdown file .
 
-## Comments added by Thilakar .K - Starts  (14-04-2021)
-## Additional exception handling added
-## Comments added by Thilakar .K - Ends  (14-04-2021)
-## Requirements
+#### Comments added by Thilakar .K - Starts  (14-04-2021)
+#### Additional details added - OS, and steps to perform the operation
+#### Comments added by Thilakar .K - Ends  (14-04-2021)
+#### Requirements
 
 * AWS CLI already configured with at least PowerUser permission
 * [Docker installed](https://www.docker.com/community-edition)
@@ -151,3 +153,5 @@ Here are a few ideas that you can use to get more acquainted as to how this over
 Next, you can use the following resources to know more about beyond hello world samples and how others structure their Serverless applications:
 
 * [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo/)
+
+# Updated the Readme file with proposed Markdown language formatting
