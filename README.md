@@ -6,6 +6,14 @@ Updating the readme file - This is an update on Markdown file .
 ## Comments added by Thilakar .K - Starts  (14-04-2021)
 ## Additional exception handling added
 ## Comments added by Thilakar .K - Ends  (14-04-2021)
+##
+## Comments added by Chaudri  - Starts  (12-04-2021)
+## Technical details added
+## Comments added by Chaudri - Ends  (12-04-2021)
+##
+## Comments added by Pooja - Starts  (17-04-2021)
+## Additional links and details added
+## Comments added by Pooja - Ends  (17-04-2021)
 ## Requirements
 
 * AWS CLI already configured with at least PowerUser permission
