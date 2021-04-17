@@ -30,7 +30,7 @@ namespace InfraHelperChatbot
             this.IsLocalDebug = isLocalDebug;
         }
         /// <summary>
-        /// Then entry point for the Lambda function that looks at the current intent and calls 
+        /// Then entry point for the Lambda function that looks at the current intent and calls
         /// the appropriate intent process.
         /// </summary>
         /// <param name="input"></param>
@@ -40,7 +40,7 @@ namespace InfraHelperChatbot
         {
             IIntentProcessor process = null;
             try
-            {                
+            {
                 switch (lexEvent.CurrentIntent.Name)
                 {
                     case "StartServer":
@@ -65,6 +65,13 @@ namespace InfraHelperChatbot
                         throw new Exception($"Intent with name {lexEvent.CurrentIntent.Name} not supported");
                 }
             }
+            //14-04-2021 - Code added by Thilakar - Starts
+            catch (ObjectDisposedException objDisposed)
+            {
+                context.Logger.LogLine($"ChatbotStartupProgram::LambdaFunctionHandler ObjDisposed exception message : {objDisposed.Message}");
+                context.Logger.LogLine($"ChatbotStartupProgram::LambdaFunctionHandler ObjDisposed stacktrace : {objDisposed.StackTrace}");
+            }
+            //14-04-2021 - Code added by Thilakar - ends
             catch(Exception ex)
             {
                 context.Logger.LogLine($"ChatbotStartupProgram::LambdaFunctionHandler exception message : {ex.Message}");
