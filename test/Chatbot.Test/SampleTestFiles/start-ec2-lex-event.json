@@ -1,3 +1,4 @@
+//This code is for fulfillment of codeHook with server configuration
 {
     "MessageVersion": "1.0",
     "InvocationSource": "FulfillmentCodeHook",
@@ -19,11 +20,11 @@
         },
         "SlotDetails": {
             "action": {
-													"Resolutions": [
-														{
-															"value": "STOP"
-														}
-													]
+			"Resolutions": [
+				{
+					"value": "STOP"
+				}
+			]
             },
             "serverName": {
                 "Resolutions": [
