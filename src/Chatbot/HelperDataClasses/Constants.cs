@@ -26,6 +26,8 @@ namespace Chatbot.HelperDataClasses
         public const string AZ_SLOT = "AvailabilityZones";
 
         public const string CONFIRMATION = "Confirmation";
+        public const string REJECT = "Reject";
+        public const string STATUS = "status";
 
         public const string KEY_PAIR_BUCKET_NAME = "infra-helper-keypairstore";
     }
