@@ -136,7 +136,6 @@ aws cloudformation deploy \
 aws cloudformation describe-stacks \
     --stack-name sam-app --query 'Stacks[].Outputs'
 ```
-
 ## Bringing to the next level
 
 Here are a few ideas that you can use to get more acquainted as to how this overall process works:
